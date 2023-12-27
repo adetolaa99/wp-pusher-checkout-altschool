@@ -3,28 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WP Pusher Checkout</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>WP Pusher Checkout Page</title>
+    <link rel="stylesheet" href="./assets/index.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+    </style>
   </head>
 
   <body>
     <header class="header">
+      <div class="header-img">
+        <img
+          src="./assets/images/wppusher-logo copy.png"
+          alt="WP Pusher logo"
+        />
+      </div>
       <nav class="nav">
-        <div class="logo">
-          <img src="" alt="" />
-        </div>
-        <div>
-          <a href="#">Download</a>
-          <a href="#">Learn more</a>
-          <a href="#">Pricing</a>
-          <a href="#">Help</a>
-          <button>Account</button>
-        </div>
+        <a href="#">Download</a>
+        <a href="#">Learn more</a>
+        <a href="#">Pricing</a>
+        <a href="#">Help</a>
+        <button>Account</button>
       </nav>
     </header>
 
     <div class="box">
       <div class="box-div">
+        <!--Left box-->
         <div class="left-box">
           <div class="border-div-one"></div>
           <div class="border-div-two"></div>
@@ -32,78 +37,79 @@
 
           <p class="checkout">Checkout</p>
 
+          <!--Basic Information-->
           <div class="left-box-one">
             <div class="basic-info">
               <div class="no">
-                <img src="" alt="" />
-                <p>1</p>
+                <img src="./assets/images/Oval 2.png" />
+                <p class="no-text">1</p>
               </div>
-              <p class="basic-info-text">Your Basic Information</p>
+              <p class="info-text">Your Basic Information</p>
             </div>
-
-            <div class="name-input">
-              <form action="#">
-                <div class="form-grp-1">
-                  <div class="form-elements">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" placeholder="Tolu" />
-                    <label for="lastname">Last Name</label>
-                    <input type="text" id="lastnme" />
-                  </div>
-                  <div class="email-div">
-                    <label for="email">Email Address: </label>
-                    <input
-                      type="text"
-                      id="email"
-                      placeholder="Enter email address"
-                    />
-                  </div>
-                </div>
-              </form>
+            <div class="name-div">
+              <p class="input-text">First Name</p>
+              <p class="input-text">Last Name</p>
+              <input
+                type="text"
+                id="firstname"
+                class="input-bar"
+                placeholder="Jane"
+              />
+              <input
+                type="text"
+                id="lastname"
+                class="input-bar"
+                placeholder="Doe"
+              />
+            </div>
+            <div class="email-div">
+              <p class="input-text">Email</p>
+              <input
+                type="text"
+                id="email"
+                class="email-input-bar"
+                placeholder="janedoe@example.com"
+              />
             </div>
           </div>
 
+          <!--Payment Information-->
           <div class="left-box-two">
             <div class="payment-info">
               <div class="no">
-                <img src="" alt="" />
+                <img src="./assets/images/Oval 2.png" />
                 <p class="no-text">2</p>
               </div>
-              <p info-text>Your Payment Information</p>
+              <p class="info-text">Your Payment Information</p>
             </div>
-
-            <div class="name-input-two">
-              <form action="#">
-                <div class="form-grp-2">
-                  <div class="form-elements">
-                    <label for="credcard" class="credcard">Credit Card</label>
-                    <input type="text" id="#credcard" placeholder="" />
-                  </div>
-                </div>
-              </form>
+            <div class="card-div">
+              <p class="input-text">Credit Card</p>
+              <input type="text" placeholder="Card Number" class="card-input" />
             </div>
           </div>
 
+          <!--Button, help, stripe-->
           <div class="left-box-three">
             <div class="button-cont">
               <button class="buy">Buy WP Pusher</button>
             </div>
             <div class="help">
-              <div class="help-icon">
-                <img src="" alt="" />
+              <div>
+                <img src="./assets/images/Mask.png" />
               </div>
               <p class="help-text">
-                Need any help!<span>Don't hesitate to contact support!</span>
+                Need any help?<span>Don't hesitate to contact support!</span>
               </p>
             </div>
             <div class="stripe">
-              <img src="" alt="" />
+              <img src="./assets/images/powered_by_stripe.png" alt="" />
             </div>
           </div>
         </div>
 
+        <!--Right box-->
         <div class="right-box">
-          <p>Freelancer</p>
+          <p class="freelancer-text">Freelancer</p>
           <div class="price">
             <p class="dollar-text">$</p>
             <p class="norm-text">99 <span class="year">Year</span></p>
@@ -111,9 +117,11 @@
           <p class="renew">Automatically renews after 1 year</p>
 
           <div class="check">
-            <img src="" alt="" />
+            <img src="./assets/images/Combined Shape.png" alt="Checkmark" />
             <p class="check-text">Use on 5 client sites</p>
+            <img src="./assets/images/Combined Shape.png" alt="Checkmark" />
             <p class="check-text">Private repositories</p>
+            <img src="./assets/images/Combined Shape.png" alt="Checkmark" />
             <p class="check-text">Email support</p>
           </div>
 
@@ -126,13 +134,14 @@
           </div>
 
           <div class="kirk">
-            <img src="" alt="" />
+            <img src="./assets/images/Bitmap.png" alt="Image of Kirk Beard" />
             <p>Kirk Beard</p>
           </div>
         </div>
       </div>
     </div>
 
+    <!--Footer-->
     <footer class="footer">
       <p>
         &copy 2018 WP Pusher IVS
