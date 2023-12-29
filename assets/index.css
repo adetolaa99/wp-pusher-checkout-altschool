@@ -1,4 +1,5 @@
-/*color picking with var*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -11,6 +12,9 @@
 
 body {
   margin: 0;
+  min-width: 1440px;
+  display: flex;
+  flex-direction: column;
   background: var(--bg-white);
   font-family: "Quicksand", sans-serif;
   padding-bottom: 139px;
@@ -52,16 +56,15 @@ body {
   cursor: pointer;
 }
 
-/*box styling start*/
-.box {
+.wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .box-div {
   display: flex;
-  height: 795px;
-  width: 892px;
   margin-top: 70px;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05);
 }
@@ -79,7 +82,7 @@ p {
 }
 
 .border-div-one {
-  width: 580px;
+  width: auto;
   height: 1px;
   color: #f5f8fa;
   background-color: rgb(235, 235, 235);
@@ -92,7 +95,7 @@ p {
 }
 
 .border-div-two {
-  width: 580px;
+  width: auto;
   height: 1px;
   background-color: rgb(235, 235, 235);
   left: 0;
@@ -104,7 +107,7 @@ p {
 }
 
 .border-div-three {
-  width: 580px;
+  width: auto;
   height: 1px;
   flex-shrink: 0;
   background-color: rgb(235, 235, 235);
@@ -120,7 +123,6 @@ p {
   padding-top: 41px;
   padding-bottom: 20px;
   font-size: 30px;
-  font-weight: 400;
   color: var(--dark-blue);
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -225,14 +227,33 @@ p {
   row-gap: 10px;
 }
 
-.card-input {
+.credit-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  width: 500px;
+  row-gap: 10px;
+}
+
+.card-number,
+.expiry-date,
+.cvc {
+  border: none;
+  width: 166.67px;
   height: 36px;
   background-color: rgb(237, 239, 242);
-  border: none;
   padding-left: 10px;
   font-size: 14px;
-  width: 485px;
   border-radius: 3px;
+}
+
+.expiry-date,
+.cvc {
+  text-align: right;
+}
+
+.cvc {
+  padding-right: 10px;
 }
 
 /*Button, help, stripe styling*/
@@ -290,6 +311,7 @@ p {
   justify-content: center;
   margin-top: 13px;
   margin-left: -48px;
+  padding-bottom: 41px;
 }
 
 /*Right blue box styling*/

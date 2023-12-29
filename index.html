@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WP Pusher Checkout Page</title>
     <link rel="stylesheet" href="./assets/index.css" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
-    </style>
   </head>
 
   <body>
@@ -27,7 +24,7 @@
       </nav>
     </header>
 
-    <div class="box">
+    <div class="wrapper">
       <div class="box-div">
         <!--Left box-->
         <div class="left-box">
@@ -82,9 +79,18 @@
               </div>
               <p class="info-text">Your Payment Information</p>
             </div>
+
             <div class="card-div">
               <p class="input-text">Credit Card</p>
-              <input type="text" placeholder="Card Number" class="card-input" />
+              <div class="credit-card">
+                <input
+                  type="text"
+                  class="card-number"
+                  placeholder="Card Number"
+                />
+                <input type="text" class="expiry-date" placeholder="MM / YY" />
+                <input type="text" class="cvc" placeholder="CVC" />
+              </div>
             </div>
           </div>
 
@@ -143,10 +149,7 @@
 
     <!--Footer-->
     <footer class="footer">
-      <p>
-        &copy 2018 WP Pusher IVS
-        <a href="#">Terms of Service</a>
-      </p>
+      <p>&copy 2018 WP Pusher IVS <a href="#">Terms of Service</a></p>
     </footer>
   </body>
 </html>
